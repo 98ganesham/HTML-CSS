@@ -7,57 +7,105 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="Style.css" />
 </head>
 
 <body>
-    <header>
-        <nav class="nav collapsible collapsible--expanded">
-            <a class="nav__brand" href="/"><img src="/images/logo.svg" alt=""></a>
-            <svg class="icon icon--white nav__toggler">
-                <use xlink:href="/images/sprite.svg#menu"></use>
-            </svg>
-            <ul class="list nav__list collapsible__content">
-                <li class="nav__item"><a href="#">Hosting</a></li>
-                <li class="nav__item"><a href="#">VPS</a></li>
-                <li class="nav__item"><a href="#">Domain</a></li>
-                <li class="nav__item"><a href="#">Pricing</a></li>
-            </ul>
+    <footer class="block block--dark footer">
+        <div class="container grid footer__sections">
+            <section class="collapsible collapsible--expanded footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Products</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="/images/sprite.svg#chevron"></use>
+                    </svg>
 
-        </nav>
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">Website Hosting</a></li>
+                        <li><a href="#">Free Automated Wordpress</a></li>
+                        <li><a href="#">Migrations</a></li>
+                        <li><a href="#">Domain Name</a></li>
+                        <li><a href="#">Monthly Web Hosting</a></li>
+                    </ul>
+                </div>
 
-    </header>
-    <section class="block container block-domain">
-        <header class="block__header">
-            <h2>Starting at $9 per month</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, est.</p>
+            </section>
+            <section class="collapsible footer__section ">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Company</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="/images/sprite.svg#chevron"></use>
+                    </svg>
 
-        </header>
-        <div class="input-group">
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Green Hosting</a></li>
+                    </ul>
+                </div>
 
-            <input type="text" class="input" placeholder="Enter Domain Name Here..">
-            <button class="btn btn--accent">
-                <svg class="icon icon--white">
-                    <use xlink:href="/images/sprite.svg#search"></use>
-                </svg>
-                Search</button>
+            </section>
+            <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Support</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="/images/sprite.svg#chevron"></use>
+                    </svg>
+
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Knowledge Base</a></li>
+                        <li><a href="#">Migrations</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">System Status</a></li>
+                        <li><a href="#">Web Hosting</a></li>
+                        <li><a href="#">
+                                DreamCompute
+                            </a></li>
+                    </ul>
+                </div>
+
+            </section>
+            <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Domains</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="/images/sprite.svg#chevron"></use>
+                    </svg>
+
+                </header>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">Domain Checker</a></li>
+                        <li><a href="#">Domain Transfer</a></li>
+                        <li><a href="#">Free Domain</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">XYZ Domain</a></li>
+                        <li><a href="#">Cheap SSL Certificate</a></li>
+
+                    </ul>
+                </div>
+
+            </section>
+            <section class="footer__brand">
+                <img src="/images/logo.svg" alt="">
+                <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
+            </section>
+
         </div>
-        <ul class="list block-domain__prices">
-            <li>
-                <span class="badge badge--secondary">
-                    .com $9
-                </span>
-            </li>
-            <li>.sg &10</li>
-            <li>.space $11</li>
-            <li>.info $14</li>
-            <li>.net $10</li>
-            <li>.xyz $10</li>
-        </ul>
-    </section>
-
-    <script src="main.js"></script>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
