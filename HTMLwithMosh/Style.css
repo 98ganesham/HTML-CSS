@@ -550,6 +550,7 @@ a {
 .callout--primary {
     background: var(--color-primary);
     color: #fff;
+
 }
 
 .callout__heading {
@@ -565,6 +566,10 @@ a {
 
 .callout__content {
     text-align: center;
+}
+
+.callout-signup {
+    transform: translateY(5rem);
 }
 
 @media screen and (min-width: 768px) {
