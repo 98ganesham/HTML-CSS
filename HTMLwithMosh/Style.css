@@ -809,12 +809,12 @@ a {
 
 /* Showcase Block */
 .block-showcase__image>img {
-    width: 50%;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
     .block-showcase .grid {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
     }
 
     .block-showcase__image {
